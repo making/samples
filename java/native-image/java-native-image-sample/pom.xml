@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>11</java.version>
 		<repackage.classifier />
-		<spring-native.version>0.11.5</spring-native.version>
+		<spring-native.version>0.12.0</spring-native.version>
 	</properties>
 
 	<dependencies>
@@ -83,6 +83,26 @@
 			</plugin>
 		</plugins>
 	</build>
+  <repositories>
+    <repository>
+      <id>spring-releases</id>
+      <name>Spring Releases</name>
+      <url>https://repo.spring.io/release</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>spring-releases</id>
+      <name>Spring Releases</name>
+      <url>https://repo.spring.io/release</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
 	<profiles>
 		<profile>
 			<id>native</id>
